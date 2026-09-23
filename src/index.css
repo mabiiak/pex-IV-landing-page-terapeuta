@@ -1,0 +1,131 @@
+:root {
+  --bone: #f1ede3;
+  --bone-deep: #e8e1cf;
+  --ink: #2b3b33;
+  --ink-soft: #4a5850;
+  --clay: #a8603f;
+  --clay-deep: #8a4c31;
+  --sage: #7c8f7b;
+  --sage-soft: #dfe6de;
+  --line: #d9d2c2;
+
+  --font-display: 'Fraunces', 'Iowan Old Style', serif;
+  --font-body: 'Work Sans', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 0 0 0.5em 0;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 1em 0;
+  max-width: 62ch;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--clay-deep);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--clay);
+  color: var(--bone);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--clay-deep);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 13px 27px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--clay);
+  color: var(--clay-deep);
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
