@@ -9,7 +9,7 @@ export default function Contato() {
     const texto = `Olá! Meu nome é ${nome || '___'}. Tenho interesse no atendimento ${
       modalidade === 'online' ? 'online' : 'presencial'
     }. ${mensagem}`
-    return `https://wa.me/5541984550609?text=${encodeURIComponent(texto)}`
+    return `https://wa.me/5541998165743?text=${encodeURIComponent(texto)}`
   }
 
   return (
